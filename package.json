@@ -1,0 +1,54 @@
+{
+  "name": "smart-delivery",
+  "version": "1.0.0",
+  "description": "Smart Delivery es un sistema de rutas inteligentes diseñado como prueba de concepto (POC) para optimizar la logística de última milla. Permite a choferes iniciar sesión, ingresar direcciones de entrega, calcular rutas óptimas usando APIs de mapas (como Google Maps), marcar entregas y registrar eventos clave en un sistema de logs. Construido con Node.js, Express y MySQL, está orientado a APIs RESTful con autenticación básica, rate limiting y una arquitectura modular para facilitar su escalabilidad.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --watch src/app.js",
+    "dev": "node --watch src/app.js",
+    "db:migrate": "sequelize db:migrate",
+    "db:migrate:undo": "sequelize db:migrate:undo",
+    "db:seed": "sequelize db:seed:all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdurant/smart-delvery.git"
+  },
+  "keywords": [
+    "smart-delivery",
+    "node",
+    "logistic",
+    "app",
+    "logistic",
+    "app",
+    "maps",
+    "traking",
+    "route",
+    "maps",
+    "Chile",
+    "Integraltech"
+  ],
+  "author": "Mauricio Durán - IntegralTech Spa mauricio@integraltech.cl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mdurant/smart-delvery/issues"
+  },
+  "homepage": "https://github.com/mdurant/smart-delvery#readme",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.6.5",
+    "sequelize": "^6.32.1",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.6.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
